@@ -512,3 +512,155 @@ body {
     font-size: 0.9em;
     color: #bbb;
 }
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header .logo img {
+        height: 60px;
+    }
+
+    .header .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header .nav-links.open {
+        display: flex;
+    }
+
+    .header .nav-links li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .header .btn button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        margin-left: auto;
+    }
+
+    .container {
+        height: auto;
+        padding: 15px;
+        font-size: 16px; /* Ajuste del tamaño de fuente */
+    }
+
+    .texto {
+        font-size: 1.2em; /* Ajuste del tamaño de fuente */
+    }
+
+    .buscar {
+        position: static;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .hero {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature img {
+        width: 100px;
+    }
+
+    .info-section {
+        padding: 20px 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .info-box img {
+        height: 200px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slide {
+        width: 200px;
+    }
+
+    .modern-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .grid-text {
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}
